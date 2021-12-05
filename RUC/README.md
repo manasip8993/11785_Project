@@ -88,6 +88,17 @@ Currently, we support the pretrained model for our model. We used the pretrained
 |CIFAR-20           | [Download](https://drive.google.com/file/d/118SIQ3YBx1y9Uoq-Wo3FyW9iYELKjcQJ/view?usp=sharing)  |
 |STL-10             | [Download](https://drive.google.com/file/d/1mHLkC2JrKsnMswIeT6wKO4fV97DbTHtJ/view?usp=sharing)  |
 
+## Steps to run in colab
+
+```
+!pip install scipy, lap
+import torchvision
+!mkdir /content/RUC/checkpoint
+!mkdir /content/RUC/data
+base_dataset = torchvision.datasets.STL10('./data/', split='train+unlabeled', download=True)
+
+```
+
 ## Citation
 
 If you find this repo useful for your research, please consider citing our paper:
